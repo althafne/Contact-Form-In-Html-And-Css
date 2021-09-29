@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form In Html And Css</title>
 
-    <!-- -------- Bootstrap Cdn -------- -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- -------- End Bootstrap Cdn -------- -->
-
-    <!-- -------- Box Icons -------- -->
+    <!-- -------- Start Style Sheets -------- -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <!-- -------- End Box Icons -------- -->
-
-    <!-- -------- Custom Css File -------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <!-- ------ End Custom Css File -------- -->
-  </head>
-  <body>
+    <!-- -------- End Style Sheets -------- -->
+</head>
+<body>
     <div class="container">
 
+        <form action="#" class="form">
 
-      <form class="form" action="#">
+            <p>
+                <label>Name</label>
+                <input type="text" placeholder="Name" name="Name" class="input" required>
+            </p>
 
+            <p>
+                <label>E-mail</label>
+                <input type="email" placeholder="E-mail" name="E-mail" class="input" required>
+            </p>
 
-        <p>
-          <label>Name</label>
-          <input type="text" name="Name" class="input" placeholder="Name" required>
-        </p>
+            <p>
+                <label>Phone No</label>
+                <input type="text" placeholder="Phone Number" name="Phone No" class="input" required>
+            </p>
 
-        <p>
-          <label>E-mail</label>
-          <input type="email" name="E-mail" class="input" placeholder="E-email" required>
-        </p>
+            <p>
+                <label>Requrments</label>
+                <textarea name="message" cols="30" rows="" placeholder="Your Requirments......" class="message" required></textarea>
+            </p>
 
-        <p>
-          <label>Phone No</label>
-          <input type="text" name="Phone Number" class="input" placeholder="Phone Number" required>
-        </p>
-
-        <p>
-          <label>Messages</label>
-          <textarea name="Messages" rows="8" cols="" class="messages" placeholder="Your Requirments...." required></textarea>
-        </p>
-
-        <button type="submit" class="btn"><i class='bx bxs-navigation'></i> Send Meesage</button>
-      </form>
+            <button type="submit" class="btn"><i class="bx bxs-navigation"></i> Send Message </button>
+        </form>
     </div>
-  </body>
+</body>
 </html>
